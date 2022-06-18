@@ -2,7 +2,6 @@ import { graphql } from "gatsby";
 import React from "react";
 
 const BlogPost = ({ data }) => {
-	console.log(data);
 	return (
 		<div>
 			<h1>{data.contentfulPlant.slug}</h1>
