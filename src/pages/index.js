@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
 
 export const pageQuery = graphql`
 	query {
-		allContentfulCategory(filter: { template: { eq: "home" } }) {
+		allContentfulCategory {
 			nodes {
 				title {
 					title
