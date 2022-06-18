@@ -4,24 +4,21 @@ import { Categories } from "../components/categories";
 
 // markup
 const IndexPage = ({ data }) => {
-	const { allContentfulCategory } = data;
+	const { allContentfulCategorietest } = data;
 
 	return (
 		<>
-			<Categories categories={allContentfulCategory} />
+			<Categories categories={allContentfulCategorietest} />
 		</>
 	);
 };
 
 export const pageQuery = graphql`
 	query {
-		allContentfulCategory {
+		allContentfulCategorietest {
 			nodes {
-				title {
-					title
-				}
+				title
 				id
-				template
 			}
 		}
 	}

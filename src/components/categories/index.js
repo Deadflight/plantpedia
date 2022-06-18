@@ -7,7 +7,7 @@ export const Categories = ({ categories }) => {
 			<ul>
 				{categories.nodes.map((node) => (
 					<>
-						<li key={node.id}>{node.title.title}</li>
+						<li key={node.id}>{node.title}</li>
 					</>
 				))}
 			</ul>
