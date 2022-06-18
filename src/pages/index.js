@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
 import * as React from "react";
+import { Authors } from "../components/Authors";
 import { Categories } from "../components/categories";
 
 // markup
@@ -9,6 +10,7 @@ const IndexPage = ({ data }) => {
 	return (
 		<>
 			<Categories categories={allContentfulCategorietest} />
+			<Authors />
 		</>
 	);
 };
