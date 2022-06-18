@@ -6,7 +6,6 @@ import { Categories } from "../components/categories";
 const IndexPage = () => {
 	return (
 		<>
-			<Authors />
 			<Categories />
 		</>
 	);
