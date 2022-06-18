@@ -1,13 +1,30 @@
+import { graphql } from "gatsby";
 import * as React from "react";
 import { Categories } from "../components/categories";
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+	const { allContentfulCategory } = data;
+
 	return (
 		<>
-			<Categories />
+			<Categories categories={allContentfulCategory} />
 		</>
 	);
 };
+
+export const pageQuery = graphql`
+	query {
+		allContentfulCategory(filter: { template: { eq: "home" } }) {
+			nodes {
+				title {
+					title
+				}
+				id
+				template
+			}
+		}
+	}
+`;
 
 export default IndexPage;
