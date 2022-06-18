@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Authors } from "../components/authors";
 import { Categories } from "../components/categories";
 
 // markup

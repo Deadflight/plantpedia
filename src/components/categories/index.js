@@ -4,12 +4,13 @@ import React from "react";
 export const Categories = () => {
 	const { allContentfulCategory } = useStaticQuery(graphql`
 		query {
-			allContentfulCategory {
+			allContentfulCategory(filter: { template: { eq: "home" } }) {
 				nodes {
 					title {
 						title
 					}
 					id
+					template
 				}
 			}
 		}
